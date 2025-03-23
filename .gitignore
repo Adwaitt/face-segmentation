@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model weights & large files
+models/
+*.pth
+*.pt
+
+# Logs & temp files
+logs/
+*.log
+*.out
+
+# Streamlit temp files
+.streamlit/
+
+# System files
+.DS_Store
+Thumbs.db
