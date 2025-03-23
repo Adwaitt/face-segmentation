@@ -2,12 +2,21 @@ import config as cfg
 
 import streamlit as st
 import skimage
+
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
+
 import io
 
 from get_models import get_models
 
 from inference import get_output
+
+matplotlib.use("Agg")
+plt.rcParams.update({"font.family": "DejaVu Sans"})
+
+font_manager._rebuild()
 
 get_models()
 
