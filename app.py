@@ -3,7 +3,6 @@ import config as cfg
 import streamlit as st
 import skimage
 
-import matplotlib
 import matplotlib.pyplot as plt
 
 import io
@@ -11,11 +10,6 @@ import io
 from get_models import get_models
 
 from inference import get_output
-
-matplotlib.use("Agg")
-plt.rcParams.update({"font.family": "DejaVu Sans"})
-
-os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib"
 
 get_models()
 
